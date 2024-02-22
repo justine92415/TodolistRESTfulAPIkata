@@ -1,0 +1,21 @@
+{
+  "name": "todolistrestfulapikata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc & node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/uuid": "^9.0.8",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
+  }
+}
