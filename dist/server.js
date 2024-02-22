@@ -33,6 +33,7 @@ const type_1 = require("./type");
 const todos = [];
 const requestListener = (req, res) => {
     var _a, _b;
+    console.log('connected');
     const headers = {
         'Access-Control-Allow-Methods': 'PATCH , GET, POST, OPTIONS, DELETE',
         'Access-Control-Allow-Origin': '*',

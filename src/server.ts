@@ -6,6 +6,7 @@ import { Todo, Path, Method } from './type';
 const todos: Array<Todo> = [];
 
 const requestListener: http.RequestListener = (req, res) => {
+  console.log('connected');
   const headers = {
     'Access-Control-Allow-Methods': 'PATCH , GET, POST, OPTIONS, DELETE',
     'Access-Control-Allow-Origin': '*',
@@ -93,7 +94,7 @@ const requestListener: http.RequestListener = (req, res) => {
       try {
         const { title } = JSON.parse(body);
         const id = req.url?.split('/').pop();
-        console.log(title,id);
+        console.log(title, id);
         const index = todos.findIndex((todo) => todo.id === id);
         if (!title && index === -1) throw new Error();
         todos[index].title = title;
